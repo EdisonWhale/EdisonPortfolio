@@ -128,6 +128,10 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 /* DARK LIGHT THEME */
+window.onload = function() {
+  document.body.classList.add(darkTheme);
+  themeButton.classList.add(iconTheme);
+}
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "fa-sun";
