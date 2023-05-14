@@ -691,6 +691,7 @@ img {
 .project-bg-title {
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
+  line-height: 1.2;
 }
 
 .project-bg-description {
@@ -1033,8 +1034,8 @@ img {
     column-gap: 5rem;
   }
   .about-container-imgAlt {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height:450px;
   }
   .about-container-data-description {
     text-align: initial;
