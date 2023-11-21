@@ -101,7 +101,7 @@
                         <h1 class="home-data-title">Hi, I'am Edison</h1>
                         <h3 class="home-data-subtitle">Actively seeking job opportunities.</h3>
                         <p class="home-data-description" style="margin-bottom: 0.5em;">Open to roles as a Software Development Engineer, Full Stack Developer, 
-                            or Data Engineer. <br/></p>
+                            Machine Learning Enginner, Data Engineer and Devops. <br/></p>
                         <h3 style="margin-top: 0.5em;">As a US citizen, I'm legally authorized to work without sponsorship.</h3><br>
                         
                         
@@ -132,9 +132,7 @@
                 <div class="about-container-data">
                     <h4 class="about-container-data-description">
                     
-                        As a dedicated Computational Science & Engineering Master's student at Georgia Tech, 
-                        I bring practical experience in full stack and application development, machine learning, data science, and database management. 
-                        I demonstrate a strong ability to collaborate, communicate effectively, and meet deadlines. Committed to creating an inclusive work environment. </h4>
+                         Currently pursuing a Master's in Computational Science & Engineering at Georgia Tech, I possess hands-on experience in full-stack and application development, machine learning, cloud computing, data analytics, database management and the construction of distributed applications.. My skill set includes a strong aptitude for collaboration, clear communication, and strict adherence to deadlines. I am dedicated to fostering an inclusive work environment and excel in team-oriented roles. </h4>
 
                     <div class="about-container-data-info">
                         <div>
@@ -222,7 +220,7 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">React</h3>
+                                    <h3 class="skills-name">React.js</h3>
                                     <span class="skills-number">85%</span>
                                 </div>
                                 <div class="skills-bar">
@@ -232,7 +230,7 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Next.js</h3>
+                                    <h3 class="skills-name">Vue.js</h3>
                                     <span class="skills-number">80%</span>
                                 </div>
                                 <div class="skills-bar">
@@ -400,7 +398,7 @@
                             <div class="skills-list grid">
                                 <div class="skills-data">
                                     <div class="skills-titles">
-                                        <h3 class="skills-name">Numpy/Panda</h3>
+                                        <h3 class="skills-name">TensorFlow</h3>
                                         <span class="skills-number">90%</span>
                                     </div>
                                     <div class="skills-bar">
@@ -420,7 +418,7 @@
                         
                                 <div class="skills-data">
                                     <div class="skills-titles">
-                                        <h3 class="skills-name">PySpark</h3>
+                                        <h3 class="skills-name">Modeling</h3>
                                         <span class="skills-number">85%</span>
                                     </div>
                                     <div class="skills-bar">
@@ -585,10 +583,12 @@
                 </div>
             </div>
         </section>
+
         <!-- PORTFOLIO -->
         <section class="portfolio section" id="portfolio">
             <h2 class="section-title">Select Projects</h2>
             <span class="section-subtitle">Most recent work,view more in Github</span>
+
 
             <div class="portfolio-container container swiper-container">
                 <div class="swiper-wrapper">
@@ -607,6 +607,78 @@
                                 
                         </div>
                     </div>
+
+                    <!-- PORTFOLIO CloudBin -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/cloudbin.jpg" alt="CloudBin" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">CloudBin: Cloud-Based Distributed File Storage System</h3>
+                            <p class="portfolio-description">
+                                Engineered a distributed file storage system using Spring Boot and Vue3, enabling efficient, resumable file uploads. Implemented Caffeine and Redis for high-concurrency scenarios and Redis Bloom filters to avert cache penetration. Utilized 'Zero-Copy' technology with FastDFS and OSS integration for improved storage efficiency and swift data retrieval. Ensured data consistency across distributed instances with a Redis and ZooKeeper-based distributed lock mechanism.
+                            </p>
+                            <a href="https://www.cloudbinpro.com" class="button button-flex button-small portfolio-button" target="_blank">
+                                Demo <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                            <a href="https://github.com/YourGitHub/CloudBin" class="button button-flex button-small portfolio-button" target="_blank">
+                                Github <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTFOLIO AI Recognition in Edge Computing -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/portfolio-ai-edge.jpg" alt="AI Recognition in Edge Computing" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">AI Recognition in Edge Computing & Cloud Native</h3>
+                            <p class="portfolio-description">
+                                Revolutionized AI recognition within edge computing ecosystems by leveraging KubeEdge, enhancing local data processing and expedited decision-making. Achieved a groundbreaking 98.6% accuracy rate in vegetable recognition deploying a sophisticated TensorFlow-based Convolutional Neural Network model. Orchestrated a Django-powered centralized management system with MQTT protocol, substantially improving real-time monitoring across distributed edge modules. Bolstered system robustness and update agility through the adoption of a Kubernetes-driven CI/CD pipeline, ensuring high availability and continuous innovation.
+                            </p>
+                            <a href="/" class="button button-flex button-small portfolio-button" target="_blank">
+                                View Project <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                            <a href="https://github.com/YourGitHub/AI-Recognition-Edge-Computing" class="button button-flex button-small portfolio-button" target="_blank">
+                                Github <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTFOLIO Distributed Microservices in Golang -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/portfolio-distributed-microservices.jpg" alt="Distributed Microservices in Golang" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Distributed Microservices in Golang</h3>
+                            <p class="portfolio-description">
+                                Engineered a robust suite of microservices in Golang, encompassing authentication, logging, event listening, and email dispatch functionalities. Implemented gRPC to streamline efficient inter-service communication and integrated RabbitMQ for dependable message queuing and asynchronous processing. Designed a secure PostgreSQL database schema with role-based access control to fortify data security. Enhanced the scalability and reliability of the microservices architecture by utilizing Docker Swarm for container orchestration and deployment.
+                            </p>
+                            <a href="/" class="button button-flex button-small portfolio-button" target="_blank">
+                                View Project <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                            <a href="https://github.com/YourGitHub/Distributed-Microservices-Golang" class="button button-flex button-small portfolio-button" target="_blank">
+                                Github <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- PORTFOLIO AI Playground -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/ai.jpg" alt="AI Playground" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">AI Playground: Comprehensive AI Experience Playground</h3>
+                            <p class="portfolio-description">
+                                Developed an AI interaction platform harnessing Next.js, Node.js, and LangChain, offering a suite of LLM features such as AI-agent-based online search, automated resume screening, and AI-driven content generation. Innovated an AI PDF reader leveraging LangChain's memory and vector databases for advanced query capabilities. Advanced the field with real-time object detection using PyTorch and interactive GPT-3.5 API integrations for dynamic responses.
+                            </p>
+                            <a href="https://comprehensive-ai-playground-2023-deploy-gbsp.vercel.app/" class="button button-flex button-small portfolio-button" target="_blank">
+                                Demo <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                            <a href="https://github.com/EdisonWhale/Comprehensive-AI-Playground-2023-Deploy" class="button button-flex button-small portfolio-button" target="_blank">
+                                Github <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+            
+                    
                     <!-- PORTFOLIO 1 -->
                     <div class="portfolio-content grid swiper-slide">
                         <img src="img/portfolio1.jpg" alt="Portfolio" class="portfolio-img">
@@ -649,6 +721,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Add Arrow -->
                 <div class="swiper-button-next">
                     <i class="fas fa-angle-right swiper-portfolio-icon"></i>
@@ -700,7 +773,7 @@
 
                         <div>
                             <h3 class="contact-title">Email</h3>
-                            <span class="contact-subtitle">Edison@gatech.edu</span>
+                            <span class="contact-subtitle">edisonapply</span>
                         </div>
                     </div>
                     <div class="contact-information">
@@ -736,7 +809,7 @@
                     </div>
                 </form>
                 <div class="contact-button">
-                    <a href="mailto:edison@gatech.edu" class="button button-flex">
+                    <a href="mailto:edisonapply@gmail.com" class="button button-flex">
                         Send Message <i class="fab fa-telegram-plane button-icon"></i>
                     </a>
                 </div>
