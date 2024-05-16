@@ -97,7 +97,7 @@ body {
   color: var(--main_text_color);
 }
 
-#zyyo-loading {
+#Edison-loading {
   background: radial-gradient(white, #d8eaff);
   background-size: 100%;
   background-position: center;
@@ -115,7 +115,7 @@ body {
   align-items: center;
 }
 
-#zyyo-loading-center {
+#Edison-loading-center {
   height: 150px;
   width: 150px;
   position: relative;
@@ -141,7 +141,7 @@ body {
   }
 }
 
-.zyyo-filter {
+.Edison-filter {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -151,7 +151,7 @@ body {
   background: var(--back_filter_color);
 }
 
-.zyyo-main {
+.Edison-main {
   width: 100%;
   transition: transform 0.5s ease;
   max-width: 1150px;
@@ -159,7 +159,7 @@ body {
   flex-direction: row;
 }
 
-.zyyo-left {
+.Edison-left {
   overflow-y: scroll;
   width: 230px;
   height: 100vh;
@@ -170,7 +170,7 @@ body {
   flex-direction: column;
 }
 
-.zyyo-left::-webkit-scrollbar {
+.Edison-left::-webkit-scrollbar {
   display: none;
 }
 
@@ -275,7 +275,7 @@ body {
   display: none;
 }
 
-.zyyo-right {
+.Edison-right {
   width: calc(100% - 230px);
   display: flex;
   padding: 24px;
@@ -592,7 +592,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .zyyo-left {
+  .Edison-left {
     display: none;
   }
 
@@ -619,7 +619,7 @@ footer {
     width: calc(100% - 30px);
   }
 
-  .zyyo-right {
+  .Edison-right {
     width: 100%;
   }
 

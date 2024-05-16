@@ -1,0 +1,64 @@
+server {
+    listen 80;
+    server_name edisonwhale.com www.edisonwhale.com;
+    root /www/wwwroot/edisonwhale.com/EdisonPortfolio/edisonwhale.com;
+    index index.html index.htm;
+
+    # 网站首页
+    location = / {
+        try_files /index.html =404;
+    }
+
+    # 处理静态文件
+    location /static/ {
+        alias /www/wwwroot/edisonwhale.com/EdisonPortfolio/edisonwhale.com/static/;
+        try_files $uri $uri/ =404;
+    }
+
+    # 处理 React 应用的所有页面，包括 /about
+    location / {
+        root /www/wwwroot/edisonwhale.com/EdisonPortfolio/edisonwhale.com/dist;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # 禁止访问的文件或目录
+    location ~ ^/(\.user.ini|\.htaccess|\.git|\.env|\.svn|\.project|LICENSE|README.md) {
+        return 404;
+    }
+
+    # 一键申请SSL证书验证目录相关设置
+    location ~ \.well-known {
+        allow all;
+    }
+
+    # 禁止在证书验证目录放入敏感文件
+    if ($uri ~ "^/\.well-known/.*\.(php|jsp|py|js|css|lua|ts|go|zip|tar\.gz|rar|7z|sql|bak)$") {
+        return 403;
+    }
+
+    # 处理图片和 Flash 文件
+    location ~* \.(gif|jpg|jpeg|png|bmp|swf)$ {
+        expires 30d;
+        error_log /dev/null;
+        access_log /dev/null;
+    }
+
+    # 处理 JavaScript 和 CSS 文件
+    location ~* \.(js|css)?$ {
+        expires 12h;
+        error_log /dev/null;
+        access_log /dev/null;
+    }
+
+    # PHP 相关配置
+    include enable-php-00.conf;
+
+    # URL 重写规则
+    include /www/server/panel/vhost/rewrite/edisonwhale.com.conf;
+
+    # 证书申请相关配置
+    include /www/server/panel/vhost/nginx/well-known/edisonwhale.com.conf;
+
+    access_log /www/wwwlogs/edisonwhale.com.log;
+    error_log /www/wwwlogs/edisonwhale.com.error.log;
+}
